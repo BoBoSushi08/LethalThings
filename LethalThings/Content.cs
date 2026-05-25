@@ -38,17 +38,9 @@ namespace LethalThings
             List<CustomContent> content =
             [
                 // scrap
-                new ScrapItem("Arson", "Assets/Custom/LethalThings/Scrap/Arson/ArsonPlush.asset", NetworkConfig.arsonSpawnChance.Value, Levels.LevelTypes.All),
-                new ScrapItem("Cookie", "Assets/Custom/LethalThings/Scrap/Cookie/CookieFumo.asset", NetworkConfig.cookieSpawnChance.Value, Levels.LevelTypes.All),
-                new ScrapItem("Bilka", "Assets/Custom/LethalThings/Scrap/Toimari/ToimariPlush.asset", NetworkConfig.toimariSpawnChance.Value, Levels.LevelTypes.All),
-                new ScrapItem("Hamis", "Assets/Custom/LethalThings/Scrap/Hamis/HamisPlush.asset", NetworkConfig.hamisSpawnChance.Value, Levels.LevelTypes.All),
-                new ScrapItem("ArsonDirty", "Assets/Custom/LethalThings/Scrap/Arson/ArsonPlushDirty.asset", NetworkConfig.dirtyArsonSpawnChance.Value, Levels.LevelTypes.All),
-                new ScrapItem("Maxwell", "Assets/Custom/LethalThings/Scrap/Maxwell/Dingus.asset", NetworkConfig.maxwellSpawnChance.Value, Levels.LevelTypes.All),
-                new ScrapItem("Glizzy", "Assets/Custom/LethalThings/Scrap/glizzy/glizzy.asset", NetworkConfig.glizzySpawnChance.Value, Levels.LevelTypes.All),
+            
                 new ScrapItem("Revolver", "Assets/Custom/LethalThings/Scrap/Flaggun/Toygun.asset", NetworkConfig.revolverSpawnChance.Value, Levels.LevelTypes.All),
-                new ScrapItem("GremlinEnergy", "Assets/Custom/LethalThings/Scrap/GremlinEnergy/GremlinEnergy.asset", NetworkConfig.gremlinSodaSpawnChance.Value, Levels.LevelTypes.All),
-                new ScrapItem("ToyHammerScrap", "Assets/Custom/LethalThings/Items/ToyHammer/ToyHammer.asset", NetworkConfig.toyHammerScrapSpawnChance.Value, Levels.LevelTypes.All),
-                new ScrapItem("Gnarpy", "Assets/Custom/LethalThings/Scrap/Gnarpy/GnarpyPlush.asset", NetworkConfig.gnarpySpawnChance.Value, Levels.LevelTypes.All),
+            
                 // shop
                 new ShopItem("RocketLauncher", "Assets/Custom/LethalThings/Items/RocketLauncher/RocketLauncher.asset", NetworkConfig.rocketLauncherPrice.Value, null, null, "Assets/Custom/LethalThings/Items/RocketLauncher/RocketLauncherInfo.asset", (item) => {
                     NetworkPrefabs.RegisterNetworkPrefab(item.spawnPrefab.GetComponent<RocketLauncher>().missilePrefab);
@@ -57,7 +49,6 @@ namespace LethalThings
                     NetworkPrefabs.RegisterNetworkPrefab(item.spawnPrefab.GetComponent<ProjectileWeapon>().projectilePrefab);
                 }),
                 new ShopItem("FlaregunAmmo", "Assets/Custom/LethalThings/Items/Flaregun/FlaregunAmmo.asset", NetworkConfig.flareGunAmmoPrice.Value, null, null, "Assets/Custom/LethalThings/Items/Flaregun/FlaregunAmmoInfo.asset"),
-                new ShopItem("ToyHammerShop", "Assets/Custom/LethalThings/Items/ToyHammer/ToyHammer.asset", NetworkConfig.toyHammerPrice.Value, null, null, "Assets/Custom/LethalThings/Items/ToyHammer/ToyHammerInfo.asset"),
                 new ShopItem("RemoteRadar", "Assets/Custom/LethalThings/Items/Radar/HandheldRadar.asset", NetworkConfig.remoteRadarPrice.Value, null, null, "Assets/Custom/LethalThings/Items/Radar/HandheldRadarInfo.asset"),
                 new ShopItem("PouchyBelt", "Assets/Custom/LethalThings/Items/Pouch/Pouch.asset", NetworkConfig.pouchyBeltPrice.Value, null, null, "Assets/Custom/LethalThings/Items/Pouch/PouchInfo.asset"),
                 new ShopItem("HackingTool", "Assets/Custom/LethalThings/Items/HackingTool/HackingTool.asset", NetworkConfig.hackingToolPrice.Value, null, null, "Assets/Custom/LethalThings/Items/HackingTool/HackingToolInfo.asset"),
